@@ -1,0 +1,102 @@
+body {
+    background-color: black;
+    color: rgb(218, 220, 221);
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+button {
+    background-color: rgba(81, 46, 187, 0);
+    margin: 10px;
+    border: none;
+    color: rgb(218, 220, 221);
+    border-radius: 5%;
+    font-size: 16px;
+}
+
+.icon-button {
+    font-size: 30px;
+}
+
+.animated-button:active {
+    color: rgb(241, 110, 110);
+}
+
+.main-panel {
+    background-color: rgb(20, 20, 20);
+    width: 300px;
+    border-style: solid;
+    border-color: rgb(70, 69, 69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.slider-panel {
+    width: 50%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-family: monospace;
+    font-size: 24px;
+}
+
+.custom-serial-panel {
+    background-color: rgb(20, 20, 20);
+    width: 300px;
+    border-style: solid;
+    border-color: rgb(70, 69, 69);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adjusted for center alignment */
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* 
+slider from:
+https://www.w3schools.com/howto/howto_js_rangeslider.asp
+*/
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+  
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background-color: rgb(218, 220, 221); /* Grey background */
+    outline: none; /* Remove outline */
+}
+
+.slider:active {
+    background-color: white;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4b4c4c; /* Dark grey */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-webkit-slider-thumb:active {
+    background: #959596; /* Lighter Grey */
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DES221</title>
+    <script src="components/SerialComponent/SerialComponent.js"></script>
+    <script src="components\Connnect-button-Comp\Connect Component.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="componentStyle.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+    <div class="main-panel">
+      <div class="main-title">Disco Lights</div>
+      
+      <div class="buttons-panel">
+        <button id="heartButton" class="icon-button animated-button"><i class="fa fa-heart"></i></button>
+        <button id="squareButton" class="icon-button animated-button"><i class="fa fa-square"></i></button>
+        <button id="diamondButton" class="icon-button animated-button"><i class="fa fa-diamond"></i></button>
+      </div>
+      
+      <div class="slider-panel">
+        <label for="sensitivitySlider">sensitivity</label>
+        <div class="slidecontainer">
+          <input type="range" id="sensitivitySlider" class="slider" name="sensitivity" min="0" max="255" value="50">
+        </div>
+      <button id="myConnectButton">Connect</button>
+      </div>
+    
+    </div>
+    
+    <!--<div class="custom-serial-panel">
+      <custom-serial id="customSerial"></custom-serial>
+    </div>-->
+    
+    
+    <script src="index.js"></script>
+    
+  </body>
+</html>
